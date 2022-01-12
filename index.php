@@ -1,3 +1,6 @@
+<?php
+    require_once 'functions/main.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
