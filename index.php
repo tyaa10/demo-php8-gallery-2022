@@ -32,6 +32,7 @@
                             include_once 'pages/upload.php';
                             break;
                         case 3:
+                        case 'gallery':
                             include_once 'pages/gallery.php';
                             break;
                         case 4:
