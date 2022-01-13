@@ -28,6 +28,7 @@
                             include_once 'pages/home.php';
                             break;
                         case 2:
+                        case 'upload':
                             include_once 'pages/upload.php';
                             break;
                         case 3:
