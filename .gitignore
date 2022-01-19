@@ -2,4 +2,8 @@
 *.iml
 node_modules/
 *.txt
-frontend/images/
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif

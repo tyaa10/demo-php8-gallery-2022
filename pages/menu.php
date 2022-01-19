@@ -7,13 +7,13 @@
         <li class="nav-item <?php echo (!isset($_GET['page']) || $_GET['page'] == 1) ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=1">Home</a>
         </li>
-        <li class="nav-item <?php echo ($_GET['page'] == 2 || $_GET['page'] == 'upload') ? 'active' : ''; ?>">
+        <li class="nav-item <?php echo (isset($_GET['page']) && ($_GET['page'] == 2 || $_GET['page'] == 'upload')) ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=2">Upload</a>
         </li>
-        <li class="nav-item <?php echo ($_GET['page'] == 3  || $_GET['page'] == 'gallery') ? 'active' : ''; ?>">
+        <li class="nav-item <?php echo (isset($_GET['page']) && ($_GET['page'] == 3  || $_GET['page'] == 'gallery')) ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=3">Gallery</a>
         </li>
-        <li class="nav-item <?php echo $_GET['page'] == 4 ? 'active' : ''; ?>">
+        <li class="nav-item <?php echo (isset($_GET['page']) && $_GET['page'] == 4) ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=4">Registration</a>
         </li>
     </ul>

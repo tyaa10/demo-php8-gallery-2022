@@ -26,7 +26,7 @@ if (!isset($_POST['uppbtn'])) {
             //folder with origin name
             $upload_filename = iconv('utf-8', 'cp1251', $_FILES['myfile']['name']);
             $result = move_uploaded_file($_FILES['myfile']['tmp_name']
-                , "./frontend/images/" . $upload_filename);
+                , str_replace( DIRECTORY_SEPARATOR . "pages", "", __DIR__)  . DIRECTORY_SEPARATOR . "frontend" .DIRECTORY_SEPARATOR  ."images". DIRECTORY_SEPARATOR . $upload_filename);
         }
         echo "<h3/><span style='color:green;'>File Uploaded Successfuly!</span><h3/>";
     }

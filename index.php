@@ -22,7 +22,7 @@
         <div class="row">
             <section class="col-12">
                 <?php
-                    $page = $_GET['page'] ?: 1;
+                    $page = $_GET['page'] ?? 1;
                     switch ($page) {
                         case 1:
                             include_once 'pages/home.php';
@@ -43,7 +43,7 @@
             </section>
         </div>
     </div>
-    <script src="frontend/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="frontend/node_modules/jquery/jquery.min.js"></script>
     <script src="frontend/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
